@@ -7,6 +7,6 @@ WORKDIR /opt/app
 COPY src /opt/app
 
 # Uncomment this to build the model first
-#CMD ["/opt/spark/bin/spark-submit", "/opt/app/build_model.py"]
-CMD ["/opt/spark/bin/spark-submit", "--packages", "com.datastax.spark:spark-cassandra-connector_2.12:3.1.0", "--conf", "spark.cassandra.connection.host=cass", "/opt/app/predict.py"]
+CMD ["/opt/spark/bin/spark-submit", "/opt/app/build_model.py"]
+#CMD ["/opt/spark/bin/spark-submit", "--packages", "com.datastax.spark:spark-cassandra-connector_2.12:3.1.0", "--conf", "spark.cassandra.connection.host=cass", "/opt/app/predict.py"]
 

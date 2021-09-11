@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.StringIndexerModel","timestamp":1631347912527,"sparkVersion":"3.1.1","uid":"StringIndexer_e2b7be502f1a","paramMap":{"outputCol":"violation_in_front_opp_index","inputCol":"Violation In Front Of Or Opposite"},"defaultParamMap":{"stringOrderType":"frequencyDesc","outputCol":"StringIndexer_e2b7be502f1a__output","handleInvalid":"error"}}

@@ -134,7 +134,7 @@ lr = LinearRegression(labelCol="violation_count",
 lr_pipeline = Pipeline(stages=[county_indexer, front_opp_indexer, one_hot_encoder, assembler, lr])
 lr_model = lr_pipeline.fit(df_le_30_violations)
 
-save_model_path = "/data/models/lr_model"
+save_model_path = "/models/lr_model"
 lr_model.save(save_model_path)
 print(f'Model saved at: {save_model_path}')
 

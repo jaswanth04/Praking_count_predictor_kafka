@@ -35,7 +35,7 @@ spark.sparkContext.setLogLevel("ERROR")
 # ssc.awaitTermination()
 
 # Model location - load the model
-model_location = "/data/models/lr_model"
+model_location = "/models/lr_model"
 model = PipelineModel.load(model_location)
 print("Model successfuly loaded")
 

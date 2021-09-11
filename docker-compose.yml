@@ -33,6 +33,7 @@ services:
     build: spark-model
     volumes:
       - /Users/j0j00vi/Documents/SEDS/Week12/Hackathon2/data:/data
+      - /Users/j0j00vi/Documents/SEDS/Week12/Hackathon2/models:/models
     ports:
       - 4040:4040
 
