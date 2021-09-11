@@ -1,0 +1,26 @@
+{% extends "structure.html" %}
+
+
+{% block main %}
+    <h1>Choose options below</h1>
+    
+    <form action="/predict" method="post">
+      <p> {{ month_list | safe}} </p>
+      <p> {{ date_list | safe}} </p>
+      <p> {{ hour_list | safe}} </p>
+      <p> {{ type_list | safe}} </p>
+      <p> {{ location_list | safe}} </p>
+      <p> {{ county_list | safe}} </p>
+      <p> {{ code_list | safe}} </p>
+      <input type = "submit" value="Predict">
+    </form>
+    
+    
+
+    <p> {{ message }} </p>
+    <br>
+    <br>
+    <br>
+
+    
+{% endblock main %}

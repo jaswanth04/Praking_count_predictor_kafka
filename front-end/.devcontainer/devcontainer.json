@@ -1,0 +1,11 @@
+{
+    "name": "Parking frontend",
+    "dockerFile": "Dockerfile",
+    "appPort": [4000],
+    "runArgs": ["--net", "hack", "--name", "flask-node"],
+    "settings": {
+        "terminal.integrated.automationShell.linux": "/bin/bash"
+    },
+    "mounts": ["source=/Users/j0j00vi/Documents/SEDS/Week12/Hackathon2/data,target=/data,type=bind,consistency=cached"]
+    
+}
